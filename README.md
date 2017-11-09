@@ -1,0 +1,2 @@
+# VidgenerAlgorithm
+implements Vidgener Algorithm

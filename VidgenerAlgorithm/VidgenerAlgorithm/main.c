@@ -62,7 +62,7 @@ int validateFuncArgs(int argc, char** argv ){
 //eccrypt function
 void encryptFunc(char* enteredString, char* codeVidgener){
     int i,j;
-    
+    int sizeOfString = strlen(enteredString);
     for(i = 0, j = 0; i < strlen(enteredString); i++, j++){
         //if end of code, reset and start from the first symbol
         if (j == strlen(codeVidgener)){
@@ -78,6 +78,7 @@ void encryptFunc(char* enteredString, char* codeVidgener){
 //decrypt function
 void dencryptFunc(char* enteredString, char* codeVidgener){
     int i, j;
+    int sizeOfString = strlen(enteredString);
     //if end of code, reset and start from the first symbol
     for(i = 0, j = 0; i < strlen(enteredString); i++, j++){
         if (j == strlen(codeVidgener)){
